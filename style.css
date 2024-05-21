@@ -1,21 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Lusitana:wght@400;700&display=swap');
 
+/*
+COLORES SAFFINA
+SPACE CADET(Azul Marino):#223059
+LIGHT STEEL BLUE(Azul clarito):#B3C5E4
+LINEN(Beige):#F7F2E5
+COLUMBIA BLUE(Azul grisaceo clarito):#CED8E0
+CAMEL(Cafe):#C49D70
+*/
+
 body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    font-family:'Albert Sans';
+    font-family: 'Albert Sans', sans-serif;
 }
 
-.navbar-header, .container-fluid{
+.navbar-header,
+.container-fluid {
     box-sizing: border-box;
     position: relative;
     background-color: #B3C5E4;
-    padding: 0px 20px; /* Modificado para ajustar el padding */
+    padding: 0px 20px;
+    /* Modificado para ajustar el padding */
     box-shadow: 0px 15px 15px -12px #111;
     z-index: 10px;
 }
-.navegacion li{
+
+.navegacion li {
     box-sizing: border-box;
     list-style-type: none;
     display: inline-block;
@@ -28,19 +40,23 @@ body {
     background-color: #223059;
     font-size: 2vh;
 }
+
 .navegacion li:hover {
     box-shadow: 0 0 2px 5px #223059;
     background-color: #465684;
     border: solid 1px #465684;
 }
+
 .navegacion a {
     text-decoration: none;
     color: #F7F2E5;
 }
-.navegacion a:hover{
+
+.navegacion a:hover {
     text-decoration: none;
     color: #F7F2E5;
 }
+
 header {
     margin-top: -5vh;
     padding: 5vh 10vh;
@@ -50,54 +66,86 @@ header {
 }
 
 img.logo {
-    margin-top: 0; /* Modificado para eliminar cualquier margen superior */
-    width: 100%; /* Modificado para hacer la imagen adaptable */
-    max-width: 1150px;
-    height: auto; /* Ajustar la altura automáticamente para mantener la proporción */
+    margin-top: 0;
+    /* Modificado para eliminar cualquier margen superior */
+    width: 100%;
+    /* Modificado para hacer la imagen adaptable */
+    max-width: 1050px;
+    height: auto;
+    /* Ajustar la altura automáticamente para mantener la proporción */
     filter: drop-shadow(0 1px 5px #f7f2e5);
 }
-img.promociones {
-    margin-top: 0; /* Modificado para eliminar cualquier margen superior */
-    width: 10%; /* Modificado para hacer la imagen adaptable */
-    max-width: 1150px;
-    height: auto; /* Ajustar la altura automáticamente para mantener la proporción */
+div.quote{
+    font-family: Lusitana, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 0 0 4px #dba567;
+    color: #b38c5e;
 }
+
+
+img.promociones {
+    margin-top: 0;
+    /* Modificado para eliminar cualquier margen superior */
+    width: 10%;
+    /* Modificado para hacer la imagen adaptable */
+    max-width: 1150px;
+    height: auto;
+    /* Ajustar la altura automáticamente para mantener la proporción */
+}
+
+.bolds{
+    font-weight: 600;
+    color: #223059;
+}
+
 .seccion {
     margin: 0;
     padding: 5% 3%;
 }
-.seccion h2{
-    font-size: 3em;
+
+.seccion h2 {
+    font-size: 3.4em;
     font-family: Lusitana, sans-serif;
     color: #c49d70;
     font-weight: bold;
     text-align: center;
 }
-
+.seccion.Eventos{
+    background-color: #B3C5E4;
+}
+.seccion.Eventos h2{
+    color: #233059;
+}
 .seccion.nosotros {
     background-color: #ced8e0;
 }
-.seccion.contacto{
+
+.seccion.contacto {
     background-color: #223059;
     color: #ced8e0;
 }
-.seccion.nosotros p {
-    font-size: 1.5em;
-    width: 60vw;
 
+.seccion.nosotros p {
+    font-size: 2em;
+    width: 60vw;
 }
 
 .seccion.Menu {
     background-color: #F7F2E5;
     box-sizing: border-box;
 }
-summary{
-  text-decoration: underline;
-  font-weight: bold;
-  letter-spacing: 3px;
-     /* Cambia el color según lo necesites */
+.seccion.Menu h2{
+    color: #223059;
 }
-.menuclassone{
+
+summary {
+    text-decoration: underline;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.menuclassone {
     text-align: left;
     background-color: #c49d70;
     box-sizing: border-box;
@@ -111,7 +159,8 @@ summary{
     box-shadow: 15px 15px 10px -15px #111;
     border-radius: 4px;
 }
-.menuclasstwo{
+
+.menuclasstwo {
     text-align: left;
     background-color: #dba567;
     box-sizing: border-box;
@@ -125,13 +174,16 @@ summary{
     border-radius: 4px;
     overflow-y: auto;
 }
-.ubicacion{
+
+.ubicacion {
     background-color: #ced8e0;
     box-sizing: border-box;
 }
+
 .menuclasspromociones {
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
+    align-items: center;
+    /* Centra verticalmente los elementos */
     background-color: #233159;
     box-sizing: border-box;
     height: 60vh;
@@ -141,23 +193,28 @@ summary{
     overflow-y: auto;
     margin: 20px;
 }
-h3{
-   font-family: Lusitana, sans-serif;
+
+h3 {
+    font-family: Lusitana, sans-serif;
 }
-li.platillos{
+
+li.platillos {
     font-weight: 700;
     font-family: 'Albert Sans';
 }
-li.platillosbebidas{
+
+li.platillosbebidas {
     font-weight: 700;
     font-family: 'Albert Sans';
     letter-spacing: 3px;
 }
+
 .carousel-inner>.item>img,
 .carousel-inner>.item>a>img {
     width: 30%;
     margin: auto;
 }
+
 .map-container {
     padding-bottom: 50%;
     position: relative;
@@ -171,7 +228,8 @@ li.platillosbebidas{
     width: 100%;
     position: absolute;
 }
-.horario{
+
+.horario {
     width: 200px;
     background-color: #223059;
     border-radius: 5px;
@@ -180,22 +238,31 @@ li.platillosbebidas{
     font-size: 16px;
     display: inline-block;
     margin: 15px;
+    font-family: 'Albert Sans';
 }
+
 .seccion.Galeria h2 {
     color: #223059;
 }
-.infopromociones{
+
+.infopromociones {
+    font-family: 'Albert Sans';
     margin: 20px;
     box-sizing: border-box;
     color: #F7F2E5;
     padding: 10px;
 }
+
 .contacto-container {
     display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    gap: 40px; /* Espacio entre los elementos */
-    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no caben en una fila */
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    gap: 40px;
+    /* Espacio entre los elementos */
+    flex-wrap: wrap;
+    /* Permite que los elementos se muevan a la siguiente línea si no caben en una fila */
 }
 
 .imgcontacto {
@@ -203,16 +270,21 @@ li.platillosbebidas{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #3f538f; /* Fondo del contenedor */
+    background-color: #3f538f;
+    /* Fondo del contenedor */
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.imgcontacto:hover{
-    background-color: #2e4079; /* Fondo del contenedor */
+
+.imgcontacto:hover {
+    background-color: #2e4079;
+    /* Fondo del contenedor */
 }
+
 .imgcontacto img.contacto {
-    width: 60%; /* Tamaño de las imágenes */
+    width: 60%;
+    /* Tamaño de las imágenes */
     height: auto;
     max-width: 500px;
     filter: drop-shadow(0 1px 5px #f7f2e5);
@@ -223,6 +295,7 @@ li.platillosbebidas{
     font-size: 1.2em;
     margin-top: 10px;
 }
+
 /* Estilo del formulario de contacto */
 form {
     font-family: 'Albert Sans', sans-serif;
@@ -313,4 +386,42 @@ form input[type="reset"]:hover {
         width: 100%;
         margin-top: 1em;
     }
+}
+.seccion.Eventos div.right-div {
+    width: calc(80% / 2);
+}
+
+.right-div p{
+    font-family: 'Albert Sans';
+    font-size: 2.4em;
+}
+
+img.eventoensaffina{
+    width: 100%;
+    height: auto;
+    box-shadow:15px 15px 10px -15px #111 ;
+}
+
+span.eventoquote{
+    font-family: 'Albert Sans';
+    color:#223059;
+    font-weight: 600;
+}
+
+.container-eventos {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 90%;
+    height: 80%;
+}
+
+.left-div,
+.right-div {
+    margin: 0;
+    flex: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 20px;
+    box-sizing: border-box;
 }
