@@ -42,7 +42,6 @@ body {
 }
 
 .navegacion li:hover {
-    box-shadow: 0 0 2px 5px #223059;
     background-color: #465684;
     border: solid 1px #465684;
 }
